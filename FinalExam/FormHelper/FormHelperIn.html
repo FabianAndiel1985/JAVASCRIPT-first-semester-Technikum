@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	 <h3>Aufgabe</h3>
+	<ul>
+	<li>
+	Beide Textarea-Felder des untenstehenden Forumlars sollen, wenn der User einen Text eingibt analysiert werden. Sobald die Schluesselwoerter "iaeo", "unido" oder "osze" eingegeben werden, sollen diese mit ihren Grossbuchstaben ersetzt werden.
+	<br>
+	Beispiel: Eingabe: "Ich arbeite in der iaeo" wird ersetzt mit: "Ich arbeite in der IAEO" (40 Punkte)
+	</li>
+	<li>
+	Verwenden Sie ein custom HTML Attribut "tokenize" um anzuzeigen, dass das Feld diese Funktionalitaet erhalten soll (15 Punkte).
+	</li>
+	<li>
+	Verwenden Sie Attribut-Werte fuer das custom HTML Attribut "tokenize" um die Schluesselwoerter fuer jedes Feld anzugeben (15 Punkte).
+	</li>
+	</ul>
+	 <hr />
+	<h1>Review</h1>
+	<form>
+	  <label>Title
+		  <input type="text" name="title" />
+	  </label>
+		<label>Tagline
+		  <input type="text" name="tagline" />
+	  </label>
+		<label>Short Description
+		  <textarea name="short" tokenize></textarea>
+	  </label>
+		<label>Long Description
+		  <textarea name="long" tokenize></textarea>
+	  </label>
+		<button>Send</button>
+	</form>
+
+	<script src="script.js"></script>
+
+</body>
+</html>

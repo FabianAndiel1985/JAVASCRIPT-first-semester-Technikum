@@ -1,0 +1,12 @@
+.initial {
+		  font-size : 24px;
+		  font-weight : bold;
+		  padding : 4px;
+		  text-shadow: 2px 2px #a0a0a0;
+		  border : 1px dashed crimson;
+		  background : #efefef;
+		}
+.highlight {
+		  background : yellow;
+		  color : blue;
+		}

@@ -1,0 +1,19 @@
+input
+,textarea
+, label {
+		display : block;
+		width : 300px
+		}
+label 	{
+		text-transform : uppercase;
+		padding : 1em;
+		border:1px solid transparent;
+		}
+.counter {
+		font-size : 0.7em;
+		text-transform : uppercase;
+		padding-bottom : 0.5em;
+		}
+.highlight {
+		border : 1px solid red;
+		}

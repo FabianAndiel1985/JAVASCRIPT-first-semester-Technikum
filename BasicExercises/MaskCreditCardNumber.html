@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+/* == Requirements ==
+ - You are asked to wrap your previous script to mask credit card numbers into a resuable function.
+ - In addition you are asked implement a check for the valid length a credit card number (19 characters).
+ - In case the length does not validate return an error message (invalid credit card number).
+ - Call this function with a valid and an invalid input and alert the result.
+*/
+
+creditCardNumber = "1234-5678-1234-5679";
+
+var maskNumber = (param) => { var displayedNumber = param.substring( 0, 3);
+                              for (let i=3;i<param.length;i++) 
+                                {
+                                  displayedNumber += "*";    
+                                }
+                              console.log(displayedNumber);
+                       }
+
+(creditCardNumber.length == 19) ? maskNumber(creditCardNumber) : console.log("Invalid number");	
+
+
+</script>
+</body>
+</html>

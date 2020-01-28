@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+      <h3>Aufgabe</h3>
+    <ol>
+        <li>
+            Das Feedback-Formular (DIV mit id "feedback") soll ins linke Panel verschoben werden (DIV mit id "left") (10 Punkte).
+        </li>
+        <li>
+            Alle Graphiken sollen in den DIV mit id "image-store" verschoben werden (15 Punkte).
+        </li>
+        <li>
+            Alle Menue items (LI mit Klassennamen "menu") sollen ins linke Menue verschoben werden (UL mit id "menu") (15 Punkte).
+        </li>
+        <li>
+            Die Menue items mit A tags die das href-Attribute "#settings", "#logout" und "#users" haben sollen ins rechte Admin-Menue verschoben werden  (UL mit id "admin-menu") verschoben werden. (30 Punkte).
+        </li>
+    </ol>
+    <hr />    
+
+<div id="main">
+
+        <div id="top">
+            <h1>
+                <img src="https://starbaseatlanta.com/wp-content/uploads/jwabuddw1042819-100x100.jpg" />
+                John Wayne
+            </h1>
+        </div>
+
+        <div id="left">
+            <h4>Menu</h4>
+            <ul id="menu">
+            </ul>
+        </div>
+
+
+        <div id="middle">
+
+            <div id="feedback">
+                <h4>Feedback</h4>
+                <form>
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="title"></input>
+                    </div>
+                    <div>
+                        <label>Description</label>
+                        <textarea name="description"></textarea>
+                    </div>
+                    <button>Send</button>
+                </form>
+            </div>
+
+            <div id="content">
+                <p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAhGKsyjeTKGzIiU4MRNXj-WHZk9ycOwceT_eARDhI0gltZgvV" />
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                </p>
+                <p>
+                    <img src="https://realtyna.com/wp-content/uploads/2018/06/facebook-slider-icon.png" />
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                </p>
+                <p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVzCni-HALkLHnoeJP9SdyZUvS1AM07VnuveTDQ1-Z8eutWTjB" />
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                </p>
+            </div>
+
+        </div>
+
+
+        <div id="right">
+            <h4>Admin Menu</h4>
+            <ul id="admin-menu"></ul>
+        </div>
+
+        <div id="bottom">
+            <ul id="footer">
+                <li><a href="#sitemap">Sitemap</a></li>
+                <li class="menu"><a href="#resume">Resume</a></li>
+                <li class="menu"><a href="#about">About</a></li>
+                <li class="menu"><a href="#blog">Blog</a></li>
+                <li><a href="#disclaimer">Disclaimer</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#logout">Log-out</a></li>
+                <li><a href="#users">Users</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div id="image-store"></div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

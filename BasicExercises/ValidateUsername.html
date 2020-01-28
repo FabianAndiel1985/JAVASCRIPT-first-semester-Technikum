@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+/* == Requirements ==
+ - You are asked to prompt the user to indicate a user name.
+ - The length of the user name should be no less than 6 and no more than 32 characters.
+ - In case the input does not validate alert a proper error message.
+ - In case the input validates alert a "Thank you" message.
+*/
+
+var userName = prompt("Please enter your your username");
+userNameLength = userName.trim().length;
+
+if ( userNameLength < 6 || userNameLength > 32  ) {
+      alert("Please enter valid username");
+    }
+
+else {
+     alert("Thank you");
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<body>
+  <html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+    <h3>Aufgabe</h3>
+<ul>
+	<li>
+		All vier Felder des untenstehenden Forumlars sollen, wenn sie Fokus erhalten, einen gelben Hintergrund erhalten. Sobald sie den Fokus verlieren wieder einen weiszen (10 Punkte).
+	</li>
+	<li>
+		NB: Verwenden Sie ein HTML Attribute "showFocus" um diese Funktionalitaet fuer ein Formfeld zu aktivieren (10 Punkte).
+	</li>
+
+	<li>
+		Zusaetzlich zum gelben Hintergrund des Formfeldes soll bei Erhalt des Fokus ein roter Rahmen um den Titel als auch des Formfeldes gezeichnet werden (20 Punkte).
+	</li>
+	<li>
+		NB: Verwenden Sie fuer die zweite Hervorhebung die bestehende CSS Klasse "highlight" (10 Punkte).
+	</li>
+</ul>
+ <hr />
+<h1>Review</h1>
+<form>
+	<label>Title
+	  <input type="text" name="title" showFocus />
+  	</label>
+	<label>Tagline
+	  <input type="text" name="tagline" showFocus />
+  	</label>
+	<label>Short Description
+	  <textarea name="short" showFocus></textarea>
+  	</label>
+	<label>Long Description
+	  <textarea name="long" showFocus></textarea>
+  	</label>
+
+	<button>
+			Send
+	</button>
+</form>
+
+	<script src="script.js"></script>
+	
+</html>
+</body>

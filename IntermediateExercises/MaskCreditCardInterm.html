@@ -1,0 +1,63 @@
+<!-- /* == Requirements ==
+ - Your supervisor asks you to refactor the credit card masking function.
+ - He wants you to separate the masking part from the validation part. - He also wants you make the number of digits shown at the beginning and the end of the mask configurable. Default value should be 4. Soll dies über eine Abfrage beim User geschehen? Sollen gleichzeit am Anfang und am Ende Zahlen zu sehen sein und * dazwischen ? Wie soll das default = 4  implementiert werden, soll der User vorher gefragt werden ob er selbst entscheiden will wieviel und wo er es sehen möchte?
+ - In addition he wants you to wrap all functions and methods in a JS object called [CreditCard].
+ - Bonus: He wants you to add an additional validation: the credit card number should have the following format: [nnnn]-[nnnn]-[nnnn]-[nnnn].*/ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		var CreditCard = {
+					validInput: true,
+					validationUserInput: function (param)  { 
+					  if(param.length == 19) {
+					     for (let i=0; i< param.length;i++) {
+					       if(i == 4 || i == 9 || i == 14) {
+					          if(param[i] != "-") {
+					            console.log("no valid entry");
+					            this.validInput = false;
+					            break;
+					          }
+					       }
+					     } // end of for loop
+					  }
+					  
+					  else {
+					    console.log("Please enter 19 digits");
+					    this.validInput = false;
+					  }
+					    
+					} /* end of validate user Input */,
+
+					masking: (param) => {
+						  let firstDigits = parseInt(prompt("Enter how many digits you want to see!"));
+						  let firstThreeNumbers= param.substring(0,firstDigits);
+						  let maskedNumber ="";
+						  for(let i=1; i <= param.length-firstThreeNumbers.length; i++) {
+						   maskedNumber += "*";
+						  }
+						  maskedNumber = firstThreeNumbers + maskedNumber;
+						  console.log(maskedNumber);
+					}
+
+				}; /* end of CreditCard Object*/
+
+
+				userInput = prompt("Please enter your credit card number");
+
+				CreditCard.validationUserInput(userInput);
+
+				if (CreditCard.validInput) {
+					CreditCard.masking(userInput);
+				}
+				
+	</script>
+
+</body>
+</html>
